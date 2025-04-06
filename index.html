@@ -1,76 +1,164 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bhuthegowd V S | Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bhuthegowd V S | Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <header class="bg-primary text-white text-center py-4">
-        <h1>Bhuthegowd V S</h1>
-        <p>Fresher | Software Developer | Java | SQL | Python</p>
-        <nav>
-            <ul class="nav justify-content-center">
-                <li class="nav-item"><a class="nav-link text-white" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="#skills">Skills</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="#projects">Projects</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- Theme Toggle -->
+  <div class="theme-toggle">
+    <div class="form-check form-switch text-white">
+      <input class="form-check-input" type="checkbox" id="themeSwitch" checked>
+      <label class="form-check-label" for="themeSwitch">🌙</label>
+    </div>
+  </div>
 
-    <section id="about" class="container my-5">
-        <h2 class="text-center">About Me</h2>
-        <p class="text-center">I am a recent B.Tech graduate in Electronics Communication and Engineering from G. Pulla Reddy Engineering College, passionate about software development, problem-solving, and innovative technologies.</p>
-    </section>
-
-    <section id="skills" class="container my-5">
-        <h2 class="text-center">Skills</h2>
-        <ul class="list-group list-group-flush text-center">
-            <li class="list-group-item">Java, SQL, Python</li>
-            <li class="list-group-item">HTML, CSS</li>
-            <li class="list-group-item">C#, ASP.NET MVC Core</li>
-            <li class="list-group-item">DevOps, Git</li>
-        </ul>
-    </section>
-
-    <section id="projects" class="container my-5">
-        <h2 class="text-center">Projects</h2>
-        <div class="row">
-            <div class="col-md-6">
-                <div class="card mb-3">
-                    <div class="card-body">
-                        <h3 class="card-title">E-Commerce Website</h3>
-                        <p class="card-text">Built a secure and scalable E-Commerce platform using Java, JSP, Servlets, Hibernate, and MySQL.</p>
-                        <a href="#" class="btn btn-primary">View on GitHub</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="card mb-3">
-                    <div class="card-body">
-                        <h3 class="card-title">Email Creation System</h3>
-                        <p class="card-text">Developed an email system using Object-Oriented Programming to automate email creation based on employee details.</p>
-                        <a href="#" class="btn btn-primary">View on GitHub</a>
-                    </div>
-                </div>
-            </div>
+  <header>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Bhuthegowd V S</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
         </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero text-center text-white d-flex align-items-center">
+      <div class="container" data-aos="fade-down">
+        <img src="C:\Users\bhuth\OneDrive\Desktop\WhatsApp Image 2025-04-07 at 03.11.08_6fa8460c.jpg" alt="Bhuthegowd V S" class="profile-img mb-4" />
+        <h1 class="display-4 fw-bold">Hi, I'm Bhuthegowd V S</h1>
+        <p class="lead">Software Developer | Java | SQL | Python | ASP.NET Core</p>
+        <div class="mt-4">
+          <a href="#projects" class="btn btn-success me-3">View Projects</a>
+          <a href="#contact" class="btn btn-outline-light">Contact Me</a>
+        </div>
+      </div>
     </section>
+  </header>
 
-    <section id="contact" class="container my-5 text-center">
-        <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:bhuthegowdvs36@gmail.com">bhuthegowdvs36@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/v-s-bhuthegowd-3a764a20a" target="_blank">LinkedIn Profile</a></p>
-        <p>GitHub: <a href="https://github.com/gowd6" target="_blank">GitHub Profile</a></p>
-    </section>
+  <section id="about" class="container text-center" data-aos="fade-up">
+    <h2>About Me</h2>
+    <p>
+      I am a passionate and dedicated software developer with a B.Tech in Electronics Communication and Engineering from G. Pulla Reddy Engineering College.
+      I specialize in Java, SQL, Python, and web technologies, and have hands-on experience in full stack development, infrastructure automation, and IoT projects.
+      I thrive on solving real-world problems and continuously expanding my technical skill set.
+    </p>
+  </section>
 
-    <footer class="bg-primary text-white text-center py-3">
-        <p>© 2025 Bhuthegowd V S. All Rights Reserved.</p>
-    </footer>
+  <section id="skills" class="bg-light" data-aos="fade-right">
+    <div class="container text-center">
+      <h2>Skills</h2>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Java, SQL, Python</li>
+        <li class="list-group-item">HTML, CSS, JavaScript</li>
+        <li class="list-group-item">C#, ASP.NET MVC Core, Entity Framework</li>
+        <li class="list-group-item">Git, DevOps Tools</li>
+      </ul>
+    </div>
+  </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <section id="experience" data-aos="fade-up">
+    <div class="container">
+      <h2 class="text-center">Experience</h2>
+
+      <div class="card shadow-sm mb-4">
+        <div class="card-body">
+          <h4 class="card-title">Graduate Engineer Trainee – Tech Mahindra</h4>
+          <h6 class="text-muted">Feb 2024 – Present</h6>
+          <p class="card-text">Trained on Full Stack Java Development and DevOps practices. Participated in project simulations involving complete development and deployment pipelines.</p>
+        </div>
+      </div>
+
+      <div class="card shadow-sm mb-4">
+        <div class="card-body">
+          <h4 class="card-title">IT Infrastructure Monitoring & Automation Intern – Stellantis</h4>
+          <h6 class="text-muted">Jun 2023 – Sep 2023</h6>
+          <p class="card-text">Worked on enterprise-level infrastructure monitoring systems and automation tools to enhance operational efficiency and reduce incident response times.</p>
+        </div>
+      </div>
+
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h4 class="card-title">IoT Developer Intern – Habib IT Solutions</h4>
+          <h6 class="text-muted">May 2022 – Jul 2022</h6>
+          <p class="card-text">Developed and tested IoT-based applications, integrating sensors and cloud platforms to collect and process real-time data.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" data-aos="fade-left">
+    <div class="container">
+      <h2 class="text-center mb-4">Projects</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title">E-Commerce Website</h3>
+              <p class="flex-grow-1">Built a secure and scalable E-Commerce platform using Java, JSP, Servlets, Hibernate, and MySQL with a clean user interface.</p>
+              <a href="#" class="btn btn-primary mt-auto">View on GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title">Email Creation System</h3>
+              <p class="flex-grow-1">Developed an email system using OOP principles to automate official email ID creation for employees based on role and department.</p>
+              <a href="#" class="btn btn-primary mt-auto">View on GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="bg-light text-center" data-aos="zoom-in">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>Email: <a href="mailto:bhuthegowdvs36@gmail.com">bhuthegowdvs36@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/v-s-bhuthegowd-3a764a20a" target="_blank">My LinkedIn</a></p>
+      <p>GitHub: <a href="https://github.com/gowd6" target="_blank">My GitHub</a></p>
+    </div>
+  </section>
+
+  <footer class="text-center py-3" data-aos="fade-up">
+    <p>© 2025 Bhuthegowd V S. All Rights Reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init();
+
+    const themeSwitch = document.getElementById('themeSwitch');
+    const html = document.documentElement;
+
+    const savedTheme = localStorage.getItem('theme') || 'dark';
+    html.setAttribute('data-theme', savedTheme);
+    themeSwitch.checked = savedTheme === 'dark';
+
+    themeSwitch.addEventListener('change', () => {
+      const newTheme = themeSwitch.checked ? 'dark' : 'light';
+      html.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+    });
+  </script>
 </body>
 </html>
